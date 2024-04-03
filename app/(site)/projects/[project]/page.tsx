@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Project({ params }: Props) {
   const slug = params.project;
   const project: ProjectType = await getSingleProject(slug);
+  const fallBackImage = "";
 
   return (
     <main className="max-w-6xl mx-auto lg:px-16 px-8">
