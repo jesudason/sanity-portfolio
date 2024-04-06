@@ -9,10 +9,8 @@ export async function getProfile() {
       headline,
       profileImage {alt, "image": asset->url},
       shortBio,
-      location,
-      fullBio,
       email,
-      "resumeURL": resumeURL.asset->url,
+      footerText,
       socialLinks,
       skills
     }`

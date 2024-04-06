@@ -15,25 +15,17 @@ export default async function About() {
             <section className="">
               <div className="">
                 <h1 className="">
-                  I&apos;m {data.fullName}. I live in {data.location}, where I
-                  design the future.
+                  ABOUT ME PAGE
+                  {/* I&apos;m {data.fullName}. I live in {data.location}, where I
+                  design the future. */}
                 </h1>
 
                 <div className="">
-                  <PortableText value={data.fullBio} />
+                  {/* <PortableText value={data.fullBio} /> */}
                 </div>
               </div>
-              <div className="">
+              {/* <div className="">
                 <div>
-                  <Image
-                    className=""
-                    src={data.profileImage.image}
-                    width={400}
-                    height={400}
-                    quality={100}
-                    alt={data.profileImage.alt}
-                  />
-
                   <a
                     href={`${data.resumeURL}?dl=${data.fullName}_resume`}
                     className="flex items-center justify-center gap-x-2 bg-[#1d1d20] border border-transparent hover:border-zinc-700 rounded-md duration-200 py-2 text-center cursor-cell font-medium"
@@ -52,9 +44,9 @@ export default async function About() {
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </section>
-            <section className="mt-24 max-w-2xl">
+            {/* <section className="mt-24 max-w-2xl">
               <h2 className="font-semibold text-4xl mb-4">Expertise</h2>
               <p className="text-zinc-400 max-w-lg">
                 I&apos;ve spent few years working on my skills. In no particular
@@ -71,7 +63,7 @@ export default async function About() {
                   </li>
                 ))}
               </ul>
-            </section>
+            </section> */}
           </div>
         ))}
     </main>

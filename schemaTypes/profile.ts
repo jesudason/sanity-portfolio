@@ -18,7 +18,7 @@ const profile = {
       title: "Headline",
       type: "string",
       description: "In one short sentence, what do you do?",
-      validation: (Rule) => Rule.required().min(40).max(50),
+      validation: (Rule) => Rule.required().min(10).max(50),
     }),
     {
       name: "profileImage",
@@ -41,11 +41,6 @@ const profile = {
       rows: 4,
     },
     {
-      name: "email",
-      title: "Email Address",
-      type: "string",
-    },
-    {
       name: "location",
       title: "Location",
       type: "string",
@@ -60,6 +55,12 @@ const profile = {
       name: "resumeURL",
       title: "Upload Resume",
       type: "file",
+    },
+    {
+      name: "footerText",
+      title: "Footer text",
+      type: "text",
+      rows: 4,
     },
     {
       name: "socialLinks",
@@ -86,10 +87,9 @@ const profile = {
           initialValue: "https://twitter.com/",
         },
         {
-          name: "twitch",
-          title: "Twitch URL",
-          type: "url",
-          initialValue: "https://twitch.com/",
+          name: "email",
+          title: "Email Address",
+          type: "email",
         },
       ],
       options: {
