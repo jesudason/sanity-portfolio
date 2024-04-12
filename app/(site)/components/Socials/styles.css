@@ -1,12 +1,4 @@
-.social-media ul {
-  display: flex;
-  margin-bottom: 32px;
-}
-
-.social-media a {
-  font-size: 24px;
-}
-
-.social-media li.icon {
-  margin-right: 24px;
-}
+/* .social-media {
+  top: -60px;
+  position: sticky;
+} */

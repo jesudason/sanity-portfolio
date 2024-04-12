@@ -1,0 +1,32 @@
+h1 {
+  font-family: "Lato", serif;
+  font-weight: 400;
+}
+
+h2,
+h3 {
+  font-weight: 400;
+  font-family: "Karla", sans-serif;
+}
+
+a,
+ul > li > a,
+p {
+  font-family: "Karla", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 40px;
+  padding-bottom: 12px;
+}
+
+h2 {
+  font-size: 20px;
+  padding-bottom: 16px;
+}
+
+h3 {
+  font-size: 18px;
+  padding-bottom: 16px;
+}

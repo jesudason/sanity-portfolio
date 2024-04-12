@@ -1,0 +1,31 @@
+/* primary: #001219,
+secondary: #005F73,
+error: #ae2012,
+3rd: #0A9396,
+4th: #94D2BD,
+5th: #E9D8A6,
+6th: #EE9B00,
+7th: #CA6702,
+8th: #BB3E03,
+9th: #AE2012,
+10th: #9B2226
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+span li {
+  color: #001219;
+}
+
+.accent {
+  color: #0a9396;
+}
+
+.error {
+  color: #ae2012;
+}

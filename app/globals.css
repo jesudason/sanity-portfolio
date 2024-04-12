@@ -9,21 +9,24 @@
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}  */
-
 .page {
+  min-height: 100vh;
+  padding-bottom: 60px;
+  padding: 60px 24px 0;
+  background: #fff;
+}
+
+.container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  padding: 60px 24px;
+}
+
+.header {
+  position: relative;
 }
 
 section.content {

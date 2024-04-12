@@ -1,8 +1,10 @@
+"use client";
 import { getProfile } from "@/sanity/sanity.query";
 import type { ProfileType } from "@/types";
 import Image from "next/image";
 import Socials from "./components/Socials";
 import Intro from "./components/Intro";
+// import "@fontsource/lato/400.css";
 
 export default async function Home() {
   // const profile: ProfileType[] = await getProfile();

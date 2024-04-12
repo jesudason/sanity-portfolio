@@ -1,23 +1,24 @@
-import NextLink from "next/link";
+"use client";
 import { getProfile } from "@/sanity/sanity.query";
 import type { ProfileType } from "@/types";
-import Image from "next/image";
 import "./styles.css";
+import { Section, StyledLink } from "../../styles/overrides";
+import styled from "@emotion/styled";
 
 export default async function Navbar() {
   const profile: ProfileType[] = await getProfile();
   return (
-    <section className="intro">
+    <Section className="intro">
       {profile &&
         profile.map((data) => (
           <div key={data._id}>
-            <NextLink href="/" className="Logo">
+            <StyledLink href="/" className="Logo">
               <h1>{data.fullName}</h1>
-            </NextLink>
-            <h2>{data.headline}</h2>
+            </StyledLink>
+            <h2 className="accent">{data.headline}</h2>
             <p>{data.shortBio}</p>
           </div>
         ))}
-    </section>
+    </Section>
   );
 }

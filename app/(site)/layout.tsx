@@ -1,5 +1,6 @@
 import "../globals.css";
-import "./typography/styles.css";
+import "./styles/typography.css";
+import "./styles/colours.css";
 // import "../page.module.css";
 
 import type { Metadata } from "next";
@@ -7,8 +8,11 @@ import { Inter } from "next/font/google";
 import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
-import MobileNav from "./components/MobileNav";
 import Socials from "./components/Socials";
+import "@fontsource/karla/400.css";
+import "@fontsource/karla/300.css";
+import "@fontsource/lato";
+import "@fontsource/lato/400.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,20 +33,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="page">
-          <header className="header">
-            <div className="mobile-hide">
+        <div className="page background-animation">
+          <div className="container">
+            <header className="header">
+              <Intro />
               <Navbar />
-            </div>
-            {/* <MobileNav /> */}
-            <Intro />
-            <div className="mobile-show">
-              <Navbar />
-              <Socials />
-            </div>
-          </header>
-          <section className="content">{children}</section>
-          <Footer />
+            </header>
+            <section className="content">{children}</section>
+            <Footer />
+            <Socials />
+          </div>
         </div>
       </body>
     </html>
