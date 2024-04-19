@@ -38,9 +38,8 @@ const NavLinks = () => {
     pathData &&
     Object.entries(pathData).map(([key, value], id) => {
       return (
-        <div key={key} className="navigation__link--wrapper">
+        <div key={id} className="navigation__link--wrapper">
           <StyledNavLinks
-            key={id}
             href={value}
             className={value === pathname ? "active" : ""}
           >
