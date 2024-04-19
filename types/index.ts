@@ -1,7 +1,7 @@
 import { PortableTextBlock } from "sanity";
 
 export type ProfileType = {
-  footerText: ReactI18NextChildren | Iterable<ReactI18NextChildren>;
+  footerText: string;
   _id: string;
   fullName: string;
   headline: string;
