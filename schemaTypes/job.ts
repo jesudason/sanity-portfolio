@@ -13,12 +13,6 @@ const job = {
       description: "What is the name of the company?",
     },
     {
-      name: "jobTitle",
-      title: "Job Title",
-      type: "string",
-      description: "Enter the job title. E.g: Software Developer",
-    },
-    {
       name: "logo",
       title: "Company Logo",
       type: "image",
@@ -29,11 +23,10 @@ const job = {
       type: "url",
     },
     {
-      name: "description",
-      title: "Job Description",
-      type: "text",
-      rows: 3,
-      description: "Write a brief description about this role",
+      name: "jobTitle",
+      title: "Job Title",
+      type: "string",
+      description: "Most recent role",
     },
     {
       name: "startDate",
@@ -44,6 +37,37 @@ const job = {
       name: "endDate",
       title: "End Date",
       type: "date",
+    },
+    {
+      name: "additionalRoles",
+      title: "Additional roles",
+      type: "array",
+      description: "Add any previous roles within the company",
+      of: [
+        {
+          type: "object",
+          name: "previous roles",
+          fields: [
+            { type: "string", name: "title", title: "title" },
+            { type: "date", name: "startDate", title: "Start Date" },
+            { type: "date", name: "endDate", title: "End Date" },
+          ],
+        },
+      ],
+    },
+    {
+      name: "description",
+      title: "Job Description",
+      type: "text",
+      rows: 3,
+      description: "Write a brief description about this role",
+    },
+    {
+      name: "achievements",
+      title: "Achievements",
+      type: "array",
+      description: "Add a list achievements",
+      of: [{ type: "string" }],
     },
   ],
 };

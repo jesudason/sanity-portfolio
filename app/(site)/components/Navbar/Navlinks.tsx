@@ -1,9 +1,7 @@
 "use client";
-import "./styles.css";
-import { usePathname } from "next/navigation";
-import Box from "@mui/material/Box";
 import { StyledLink } from "../../styles/overrides";
 import styled from "@emotion/styled";
+import { usePathname } from "next/navigation";
 
 const StyledNavLinks = styled(StyledLink)`
   text-decoration: none;
@@ -53,16 +51,4 @@ const NavLinks = () => {
   );
 };
 
-export default function Navbar() {
-  const pathname = usePathname();
-
-  return (
-    <section className="mobile-nav">
-      <Box className="navigation">
-        <div className="navigation__links">
-          <NavLinks />
-        </div>
-      </Box>
-    </section>
-  );
-}
+export default NavLinks;

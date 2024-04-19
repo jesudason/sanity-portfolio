@@ -25,9 +25,11 @@ export async function getJob() {
         jobTitle,
         "logo": logo.asset->url,
         url,
-        description,
         startDate,
         endDate,
+        description,
+        additionalRoles,
+        achievements,
       }`
   );
 }

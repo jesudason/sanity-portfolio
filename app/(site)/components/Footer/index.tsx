@@ -39,7 +39,7 @@ export default async function Footer() {
         {profile &&
           profile.map((data) => {
             return (
-              <FooterTag>
+              <FooterTag key={data._id}>
                 <p>{data.footerText}</p>
               </FooterTag>
             );

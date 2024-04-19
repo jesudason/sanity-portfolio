@@ -24,9 +24,11 @@ export type JobType = {
   jobTitle: string;
   logo: string;
   url: string;
-  description: string;
   startDate: Date;
   endDate: Date;
+  achievements: string[];
+  description: string;
+  additionalRoles: string[];
 };
 
 export type ProjectType = {
